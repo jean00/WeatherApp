@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather app</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="left">
+          <h1 class="iconlogo">
+            <span>
+              <i class="fas fa-cloud-sun-rain"></i>
+              WeatherApp
+            </span>
+          </h1>
+          <div class="search">
+            <input
+              class="searchbar"
+              type="search"
+              placeholder="Search your city"
+              autocomplete="off"
+            />
+            <button class="searchbutton" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+        <div class="right">
+          <div class="label">C°/ F°</div>
+          <label class="switch">
+            <input class="toggle" type="checkbox" autocomplete="off" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </header>
+      <main>
+        <section class="today">
+          <div class="info">
+            <h1 class="date"></h1>
+            <div class="city">
+              <h2 class="name"></h2>
+            </div>
+            <div class="iconTemperature">
+              <img class="iconimg" />
+              <h1 class="temperature"></h1>
+            </div>
+            <div class="description"></div>
+            <div class="listInfos">
+              <ul class="list">
+                <li class="humidity"></li>
+                <li class="windspeed"></li>
+                <li class="visibility"></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="forecasts">
+          <h1 class="forecasttext"></h1>
+          <div class="forecastInfo">
+            <div class="0 card">
+              <h1 class="day0"></h1>
+              <div class="iconTemperature">
+                <img class="icon0" />
+                <h1 class="avgtemp0"></h1>
+              </div>
+              <div class="description0"></div>
+              <div class="listInfos">
+                <ul class="list">
+                  <li class="sunrise0"></li>
+                  <li class="sunset0"></li>
+                  <li class="mintemp0"></li>
+                </ul>
+                <ul class="list">
+                  <li class="maxtemp0"></li>
+                  <li class="humidity0"></li>
+                  <li class="windspeed0"></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="1 card">
+              <h1 class="day1"></h1>
+              <div class="iconTemperature">
+                <img class="icon1" />
+                <h1 class="avgtemp1"></h1>
+              </div>
+              <div class="description1"></div>
+              <div class="listInfos">
+                <ul class="list">
+                  <li class="sunrise1"></li>
+                  <li class="sunset1"></li>
+                  <li class="mintemp1"></li>
+                </ul>
+                <ul class="list">
+                  <li class="maxtemp1"></li>
+                  <li class="humidity1"></li>
+                  <li class="windspeed1"></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="2 card">
+              <h1 class="day2"></h1>
+              <div class="iconTemperature">
+                <img class="icon2" />
+                <h1 class="avgtemp2"></h1>
+              </div>
+              <div class="description2"></div>
+              <div class="listInfos">
+                <ul class="list">
+                  <li class="sunrise2"></li>
+                  <li class="sunset2"></li>
+                  <li class="mintemp2"></li>
+                </ul>
+                <ul class="list">
+                  <li class="maxtemp2"></li>
+                  <li class="humidity2"></li>
+                  <li class="windspeed2"></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="3 card">
+              <h1 class="day3"></h1>
+              <div class="iconTemperature">
+                <img class="icon3" />
+                <h1 class="avgtemp3"></h1>
+              </div>
+              <div class="description3"></div>
+              <div class="listInfos">
+                <ul class="list">
+                  <li class="sunrise3"></li>
+                  <li class="sunset3"></li>
+                  <li class="mintemp3"></li>
+                </ul>
+                <ul class="list">
+                  <li class="maxtemp3"></li>
+                  <li class="humidity3"></li>
+                  <li class="windspeed3"></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="4 card">
+              <h1 class="day4"></h1>
+              <div class="iconTemperature">
+                <img class="icon4" />
+                <h1 class="avgtemp4"></h1>
+              </div>
+              <div class="description4"></div>
+              <div class="listInfos">
+                <ul class="list">
+                  <li class="sunrise4"></li>
+                  <li class="sunset4"></li>
+                  <li class="mintemp4"></li>
+                </ul>
+                <ul class="list">
+                  <li class="maxtemp4"></li>
+                  <li class="humidity4"></li>
+                  <li class="windspeed4"></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="5 card">
+              <h1 class="day5"></h1>
+              <div class="iconTemperature">
+                <img class="icon5" />
+                <h1 class="avgtemp5"></h1>
+              </div>
+              <div class="description5"></div>
+              <div class="listInfos">
+                <ul class="list">
+                  <li class="sunrise5"></li>
+                  <li class="sunset5"></li>
+                  <li class="mintemp5"></li>
+                </ul>
+                <ul class="list">
+                  <li class="maxtemp5"></li>
+                  <li class="humidity5"></li>
+                  <li class="windspeed5"></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="6 card">
+              <h1 class="day6"></h1>
+              <div class="iconTemperature">
+                <img class="icon6" />
+                <h1 class="avgtemp6"></h1>
+              </div>
+              <div class="description6"></div>
+              <div class="listInfos">
+                <ul class="list">
+                  <li class="sunrise6"></li>
+                  <li class="sunset6"></li>
+                  <li class="mintemp6"></li>
+                </ul>
+                <ul class="list">
+                  <li class="maxtemp6"></li>
+                  <li class="humidity6"></li>
+                  <li class="windspeed6"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="background">
+          <div class="loader"></div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
