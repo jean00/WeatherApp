@@ -84,7 +84,7 @@ const WebUI = () => {
     }
   };
 
-  const imagesrc = (id) => `http://openweathermap.org/img/wn/${id}@2x.png`; //search the img
+  const imagesrc = (id) => `https://openweathermap.org/img/wn/${id}@2x.png`; //search the img
 
   return { displayCurrentWeather, displayForecastWeather };
 };

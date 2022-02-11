@@ -11,7 +11,7 @@ const Weather = () => {
     `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=20f7632ffc2c022654e4093c6947b4f4`; //get longitudine and latitudine
 
   const buildURL = (lat, lon) =>
-    `http://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,alerts,hourly&appid=03c2508b494fb368b84eb1ad97f619ff`; //get the exact cityname
+    `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,alerts,hourly&appid=03c2508b494fb368b84eb1ad97f619ff`; //get the exact cityname
 
   const getCity = () => document.querySelector(".searchbar").value;
 

@@ -4,7 +4,7 @@ import { weatherAPI } from "../src/weatherAPI";
 
 const Geocoding = () => {
   const reverseGeocoding = (lat, lon) =>
-    `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=20f7632ffc2c022654e4093c6947b4f4`;
+    `https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=20f7632ffc2c022654e4093c6947b4f4`;
 
   const getLocation = (formattedDate) => {
     navigator.geolocation.getCurrentPosition((position) => {
