@@ -1,7 +1,6 @@
 "use strict";
 
 import { weatherAPI } from "../src/weatherAPI";
-import { format } from "date-fns";
 import { geo } from "../src/geolocalization";
 
 import "@fortawesome/fontawesome-free/js/fontawesome";
@@ -10,13 +9,11 @@ import "@fortawesome/fontawesome-free/js/regular";
 import "@fortawesome/fontawesome-free/js/brands";
 
 const Init = () => {
-  const today = new Date();
-  const formattedDate = format(today, "PPPP");
   window.addEventListener("keydown", keyInput);
 
   //call geo functions when the page is loaded
   window.onload = () => {
-    geo.getLocation(formattedDate);
+    geo.getLocation();
   };
 
   //keyboard support
@@ -34,7 +31,6 @@ const Init = () => {
 
   const callAPI = () => {
     document.querySelector(".background").style.display = "flex";
-    document.querySelector(".date").textContent = formattedDate;
     weatherAPI.fetchData();
   };
   return { listener };

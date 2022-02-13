@@ -6,12 +6,18 @@ const Geocoding = () => {
   const reverseGeocoding = (lat, lon) =>
     `https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=20f7632ffc2c022654e4093c6947b4f4`;
 
-  const getLocation = (formattedDate) => {
-    navigator.geolocation.getCurrentPosition((position) => {
-      document.querySelector(".date").textContent = formattedDate;
-      document.querySelector(".background").style.display = "flex";
-      fetchData(position.coords.latitude, position.coords.longitude);
-    }, geoErrorHandler);
+  const getLocation = () => {
+    var options = {
+      enableHighAccuracy: true,
+      timeout: 5000,
+      maximumAge: 0,
+    };
+    navigator.geolocation.getCurrentPosition(success, geoErrorHandler, options);
+  };
+
+  const success = (position) => {
+    document.querySelector(".background").style.display = "flex";
+    fetchData(position.coords.latitude, position.coords.longitude);
   };
 
   const geoErrorHandler = (error) => {

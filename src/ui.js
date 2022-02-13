@@ -3,8 +3,11 @@
 import { fromUnixTime, format } from "date-fns";
 
 const WebUI = () => {
+  const today = new Date();
+  const formattedDate = format(today, "PPPP");
   //current weather display elements
   const displayCurrentWeather = (obj) => {
+    document.querySelector(".date").textContent = formattedDate;
     let id = obj.id;
     const city_name = document.querySelector(".name");
     const icon = document.querySelector(".iconimg");
